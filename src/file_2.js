@@ -47,6 +47,23 @@ function numAndLetters(str) {
     }
     return object;
 }
+// console.log(numAndLetters(string));
+
+
+// numbers and letters with regex
+function numAndLettersRegex(str) {
+    let ren = /0-9/;
+    let rel = /\w/;
+
+    for (let i = 0; i <str.length; i++) {
+        if (str.test(ren)) {
+            object.numbers++;
+        } else if (str.test(rel)) {
+            object.letters++;
+        }
+    }
+    return object;
+}
 console.log(numAndLetters(string));
 
 
