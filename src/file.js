@@ -40,7 +40,7 @@
 // console.log(object);
 
 
-//Same function but using a for loop and Number.isNaN() method
+//Same function but using a for loop and Number isNaN() method
 function convertString(str) {
     let letters = [];
     let numbers = [];
