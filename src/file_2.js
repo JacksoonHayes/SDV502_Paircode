@@ -64,6 +64,29 @@ function numAndLettersRegex(str) {
     }
     return object;
 }
-console.log(numAndLetters(string));
+// console.log(numAndLetters(string));
+
+
+// numbers and letters with split and filter
+function NumbersAndLetters(str) {
+    let letters = []
+    let numbers = []
+    const filterStr = str.split('').filter(item => item != ' ');
+    console.log(filterStr);
+    for (let i = 0; i < filterStr.length; i++) {
+        if (isNaN(filterStr[i])) {
+            letters.push(filterStr[i]);
+        } else {
+            numbers.push(filterStr[i]);
+        }
+    }
+    let finalCount = {
+        "letters": letters.length,
+        "numbers": numbers.length
+    }
+    return finalCount;
+}
+string_2 = "Hello World 2023";
+console.log(NumbersAndLetters(string_2));
 
 
