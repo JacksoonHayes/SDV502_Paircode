@@ -7,4 +7,4 @@ function volumeOfContainer(container) {
     }
     return container.width * container.length * container.height;
 }
-console.log(volumeOfContainer(container));
+console.log(volumeOfContainer());
