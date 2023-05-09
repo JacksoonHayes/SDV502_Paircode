@@ -34,20 +34,18 @@ function convertArray(obj) {
 
 
 // numbers and letters
+object = {letters: 0, numbers: 0};
 string = "Hello World 2023";
 
 function numAndLetters(str) {
-    let nums = 0;
-    let letters = 0;
-
     for (let i = 0; i <str.length; i++) {
         if (str[i] >= "0" && str[i] <= "9") {
-            nums++;
+            object.numbers++;
         } else if (str[i] !== " ") {
-            letters++;
+            object.letters++;
         }
     }
-    return `Numbers: ${nums}, Letters: ${letters}`;
+    return object;
 }
 console.log(numAndLetters(string));
 
