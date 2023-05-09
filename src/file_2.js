@@ -30,4 +30,25 @@ function convertArray(obj) {
     return Object.entries(obj);
 }
 
-console.log(convertArray(object));
+// console.log(convertArray(object));
+
+
+// numbers and letters
+string = "Hello World 2023";
+
+function numAndLetters(str) {
+    let nums = 0;
+    let letters = 0;
+
+    for (let i = 0; i <str.length; i++) {
+        if (str[i] >= "0" && str[i] <= "9") {
+            nums++;
+        } else if (str[i] !== " ") {
+            letters++;
+        }
+    }
+    return `Numbers: ${nums}, Letters: ${letters}`;
+}
+console.log(numAndLetters(string));
+
+
