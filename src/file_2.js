@@ -20,4 +20,14 @@ function calcVolume2(dim) {
     return dim.width * dim.height * dim.length;
 }
 
-console.log(calcVolume2(container.dimensions));
+// console.log(calcVolume2(container.dimensions));
+
+
+// convertArray
+object = {a: 1, b: 2, c: 3};
+
+function convertArray(obj) {
+    return Object.entries(obj);
+}
+
+console.log(convertArray(object));
